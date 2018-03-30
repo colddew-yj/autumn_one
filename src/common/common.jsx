@@ -44,30 +44,30 @@ export const fetchPromise = (url, params, type = 'POST') => {
     })
 
 }
-// exports.dispatchRequest=(requestObj)=>{
-//     const {dispatch,url, params, type} = requestObj;
-//     fetchPromise(url, params, type).then((res)=>{
-//
-//     })
-// }
-// exports.dispatchRequest = function(requestObj) {
-//     const dispatch = requestObj.dispatch;
-//     const jrApi = requestObj.jrApi;
-//     const fetchPrm = requestObj.fetchPrm;
-//     const requestType = requestObj.requestType;
-//     const requestingAction = requestObj.requestingAction;
-//     const successAction = requestObj.successAction;
-//     const errorAction = requestObj.errorAction;
-//     const extra = requestObj.extra; /**/
-//
-//     requestingAction && dispatch(requestingAction());
-//     return getFetchPromise(jrApi, requestType, fetchPrm ).then(function (ret) {
-//         return dispatch(successAction(ret, extra));
-//     }).catch(function (error) {
-//         if(errorAction) {
-//             return dispatch(errorAction(error));
-//         } else {
-//             console.error(error)
-//         }
-//     });
-// };
+/*
+function SuperType(name) {
+    this.name = name;
+    this.colors = ["red","blue","green"];
+}
+SuperType.prototype.sayName = function() {
+    console.log(this.name);
+}
+function SubType(name, age) {
+    SuperType.call(this,name);//继承属性
+    this.age = age;
+}
+//继承方法
+SubType.prototype = new SuperType();
+SubType.prototype.constructor = SubType;
+SubType.prototype.sayAge = function() {
+    console.log(this.age);
+}
+var instance1 = new SubType("EvanChen",18);
+instance1.colors.push("black");
+console.log(instance1.colors);//"red","blue","green","black"
+instance1.sayName();//"EvanChen"
+instance1.sayAge();//18
+var instance2 = new SubType("EvanChen666",20);
+console.log(instance2.colors);//"red","blue","green"
+instance2.sayName();//"EvanChen666"
+instance2.sayAge();//20*/
