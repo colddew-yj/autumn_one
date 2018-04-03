@@ -71,3 +71,36 @@ var instance2 = new SubType("EvanChen666",20);
 console.log(instance2.colors);//"red","blue","green"
 instance2.sayName();//"EvanChen666"
 instance2.sayAge();//20*/
+//寄生组合式继承
+// function Super(name){
+//     this.name = name;
+//     this.arr = ['max','min'];
+// }
+// Super.prototype.say=function(){
+//     console.log(this.name);
+// }
+// Super.prototype.age = 11;
+// function Sub(name,sex){
+//     Super.call(this,name);
+//     this.sex= sex;
+// }
+// function inheritPrototype (subType,superType){
+//     var prototype = Object.create(superType.prototype);
+//     prototype.constructor = subType;
+//     subType.prototype= prototype;
+// }
+// inheritPrototype(Sub,Super);
+// Sub.prototype.saySex = function(){
+//     console.log(this.sex);
+// }
+// var p1 = new Sub('jet','M');
+// var p2 = new Sub('tom','F');
+// // console.log(p1.name)
+// // p1.arr.push('mid')
+// // console.log(p1.arr);
+// // console.log(p2.name)
+// // p2.arr.push('mid22')
+// // console.log(p2.arr);
+// p1.saySex()
+// p2.saySex()
+
