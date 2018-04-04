@@ -1,3 +1,6 @@
+/*
+* 异步请求
+* */
 export const fetchPromise = (url, params, type = 'POST') => {
     return new Promise((resolve, reject) => {
         if (type === 'GET') {

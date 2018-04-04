@@ -13,6 +13,7 @@ class Index extends Component {
         return (
             <div>
                 Index444555555
+                <h1 className="animated bounce">Example</h1>
             </div>
         )
     }
