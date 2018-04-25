@@ -15,6 +15,7 @@ class Index extends Component {
             <div>
                 Index444555555
                 <i className="iconfont icon-shouye"></i>
+                <h1 className="animated bounce">Example</h1>
             </div>
         )
     }

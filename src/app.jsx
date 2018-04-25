@@ -10,6 +10,7 @@ import {createStore, applyMiddleware} from 'redux'
 import reducers from './redux/reducer'
 import 'normalize-css';
 import './styles/common'
+import 'animate.css/animate.min.css'
 //JS监听浏览器文字大小代码
 (function (doc, win) {
     var docEl = doc.documentElement,
