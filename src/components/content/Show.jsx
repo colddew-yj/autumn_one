@@ -6,13 +6,145 @@ class Show extends Component {
         }
     }
 
-    componentDidMount() {
+    componentWillUnmount() {
+        // console.log(this.props.match.params)
     }
+    comp
     render() {
         return (
             <div>
                 Show
+                <div>
+                    Show
+                </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
+            </div> <div>
+                Show
             </div>
+            </div>
+
         )
     }
 }

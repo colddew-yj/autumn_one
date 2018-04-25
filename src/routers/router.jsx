@@ -2,9 +2,22 @@ import React from 'react'
 import {
     Route, Link,Switch,Redirect
 } from 'react-router-dom'
-import Login from './../components/Login';
-import Reg from './../components/Reg';
-import Main  from  './../components/content/main';
+import Bundle from './Bundle';
+const Login = (props) => (
+    <Bundle load={() => import('./../components/Login')}>
+        {(Login) => <Login {...props}/>}
+    </Bundle>
+);
+const Reg = (props) => (
+    <Bundle load={() => import('./../components/Reg')}>
+        {(Reg) => <Reg {...props}/>}
+    </Bundle>
+);
+const Main = (props) => (
+    <Bundle load={() => import('./../components/content/main')}>
+        {(Main) => <Main {...props}/>}
+    </Bundle>
+);
 const Routes = (
     <Switch>
         <Route path="/login" component={Login}/>

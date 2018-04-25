@@ -8,6 +8,7 @@ import promiseMiddleware from 'redux-promise';
 import {Provider} from 'react-redux'
 import {createStore, applyMiddleware} from 'redux'
 import reducers from './redux/reducer'
+import 'normalize-css';
 import './styles/common'
 //JS监听浏览器文字大小代码
 (function (doc, win) {

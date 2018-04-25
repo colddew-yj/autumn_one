@@ -7,7 +7,7 @@ const webpackConfigDev = {
         rules: [
             {
                 test: /\.(less|css)$/,
-                use: ['style-loader', 'css-loader', 'postcss-loader']
+                use: ['style-loader', 'css-loader','less-loader' , 'postcss-loader']
             },
         ]
     },

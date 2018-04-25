@@ -4,12 +4,18 @@ import {fetchPromise} from  'Common/common'
 //同步dispatch
 export const getStep = (data={}) => {
     return (dispatch)=>{
-        dispatch(createAction('changeLoginStatus')(data));
+        dispatch(createAction('changeLoginStatus')({value:data.status}));
     }
 };
 export const setNum = (data={}) => {
     return (dispatch)=>{
-        dispatch(createAction('setNum')(data));
+        dispatch(createAction('setNum')({value:data.num}));
+    }
+
+};
+export const setType = (data={}) => {
+    return (dispatch)=>{
+        dispatch(createAction('themeType')({value:data.themeType}));
     }
 
 };
@@ -24,8 +30,8 @@ export const  asySend = (url,data,method) =>{
 
  const handleDispatch =(res,successType,dispatch)=>{
          if(res.status===1){
-             dispatch(createAction(successType)(res.data))
+             dispatch(createAction(successType)({value:res.data}))
          }else{
-             dispatch(createAction('error')(res.message))
+             dispatch(createAction('error')({value:res.message}))
          }
 }
