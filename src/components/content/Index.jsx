@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types';
+import {connect} from 'react-redux'
 class Index extends Component {
     constructor(props) {
         super(props);
@@ -13,6 +14,7 @@ class Index extends Component {
         return (
             <div>
                 Index444555555
+                <i className="iconfont icon-shouye"></i>
                 <h1 className="animated bounce">Example</h1>
             </div>
         )
@@ -21,4 +23,9 @@ class Index extends Component {
 Index.contextTypes = {
     router: PropTypes.object
 };
-export default Index
+const stateToProps = (state)=>{
+    return{
+        themeType: state.themeType
+    }
+}
+export default connect(stateToProps,{})(Index)

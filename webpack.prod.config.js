@@ -21,6 +21,13 @@ const webpackConfigProd = {
                                 camelCase: true
                             }
                         },
+                        {
+                            loader: 'less-loader',
+                            options: {
+                                minimize: true,
+                                camelCase: true
+                            }
+                        },
                         'postcss-loader'
                     ]
                 })
