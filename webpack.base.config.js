@@ -17,7 +17,8 @@ const webpackConfigBase = {
             Redux: path.resolve(__dirname, 'src/redux'),
             Common: path.resolve(__dirname, 'src/common'),
             Styles: path.resolve(__dirname, 'src/styles'),
-            Routers: path.resolve(__dirname, 'src/routers')
+            Routers: path.resolve(__dirname, 'src/routers'),
+            Imgs: path.resolve(__dirname, 'src/imgs')
         }
     },
     plugins: [
@@ -50,7 +51,7 @@ const webpackConfigBase = {
             }, {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 use: {
-                    loader: 'url-loader',
+                    loader: 'file-loader',
                     options: {
                         limit: 8192,
                         name: 'img/[name].[hash:4].[ext]'
