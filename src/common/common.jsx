@@ -47,6 +47,44 @@ export const fetchPromise = (url, params, type = 'POST') => {
     })
 
 }
+//滚动函数
+/*
+ *eleId:目标元素id
+ * isArr:是数组: (列表中使用,可配合图片懒加载,暂时没有开发) 非数组:使用场景举例:滚动操作时隐藏或显示某元素(后面考虑使用函数节流)
+ * bias:高度偏值
+ * method:具体业务操作方法
+ * */
+export const onScroll = (eleId, method, isArr = false, bias = 120) => {
+    let content = document.getElementById(eleId);
+    let seeHeight = document.documentElement.clientHeight;         //可见区域高度
+    let srcollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; //滚动条距离顶部高度
+    let curImg;
+    if (isArr) {
+        // var imgLen = content.children.length;
+        // for(let i = 0;i < imgLen; i++){
+        //   curImg  = content.children[i].children[0];
+        //     if(curImg.offsetTop < (seeHeight + srcollTop-(bias))){
+        //         if(curImg.dataset.src != "undefined"){
+        //             curImg.setAttribute("src",curImg.dataset.src);
+        //         }
+        //     }
+        // }
+    } else {
+        curImg = content;
+        method(curImg.offsetTop < (seeHeight + srcollTop - (bias)));
+    }
+}
+// onScroll('downloadBtn',(isShow)=>{
+//     if(isShow){
+//         this.setState({
+//             closeDownload: true
+//         })
+//     }else{
+//         this.setState({
+//             closeDownload: false
+//         })
+//     }
+// })
 /*
 function SuperType(name) {
     this.name = name;
