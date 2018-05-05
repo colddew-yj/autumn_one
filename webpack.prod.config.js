@@ -37,7 +37,8 @@ const webpackConfigProd = {
         sourceMapFilename: '[name].[chunkhash:5].map',
         filename: "[name].[chunkhash:5].js",
         chunkFilename: '[name].[chunkhash:5].js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/',
     },
     // module: {
     //    rules: [

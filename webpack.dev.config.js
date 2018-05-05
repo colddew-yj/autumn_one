@@ -13,7 +13,8 @@ const webpackConfigDev = {
     },
     output: {
         path: path.join(__dirname, './dist'),
-        filename: '[name].js'
+        filename: '[name].js',
+        publicPath: '/',
     },
     plugins: [
         // 定义环境变量为开发环境
@@ -34,7 +35,6 @@ const webpackConfigDev = {
         contentBase: path.join(__dirname, './dist'),
         historyApiFallback: true,
         hot: true,
-        publicPath: '/',
         inline: true,
         port: 8014,
         open: true,

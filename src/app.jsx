@@ -36,7 +36,7 @@ if (module.hot) {//第一次热更新存在报错
 // }
 
 ReactDOM.render(<Provider store={store}>
-  <HashRouter>
+  <Router>
     {Routes}
-  </HashRouter>
+  </Router>
 </Provider>, document.getElementById('root'));
